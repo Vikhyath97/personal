@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-const NoteSchema = mongoose.Schema({
-    Name: String,
-    Password: String
+const userSchema = mongoose.Schema({
+    name: String,
+    password: String
 }, {
     timestamps: true
 });
 
-module.exports = mongoose.model('UserDetails', UserSchema);
+module.exports = mongoose.model('UserDetails', userSchema );
